@@ -1,0 +1,32 @@
+---
+layout: layout-page.njk
+title: Página de inicio
+description: Meta descripción de la página de inicio
+---
+
+<section class="title">
+  <h1>Ayudamos a los escritores a tener éxito en la economía de los creadores</h1>
+</section>
+{% include "box-new-cta.njk" %}
+{# <section class="index-principal">
+  <div class="box-texto">
+    <a href="https://newsroom.pinterest.com/es/" class="btn" target="_blank" rel="noopener" style="color:red">
+      ver pagina original: pinterest.com</a>
+    <h1>El informe de tendencias del otoño 2024 de Pinterest</h1>
+    <a>Más Información</a>
+  </div>
+  <div class="box-img">
+    <img src="https://placehold.co/960x960/orange/orangered" alt="img"/>
+  </div>
+</section> #}
+<section class="ultimas-noticias">
+  {% for post in collections.blog %}
+    <a href="{{ post.url }}" class="box-link">
+      <img src="{{ post.data.img }}" alt="img"/>
+      <h3>{{ post.data.title }}</h3>
+      <p>
+        {{ post.data.date }}
+      </p>
+    </a>
+  {% endfor %}
+</section>

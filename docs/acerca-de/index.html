@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>copyblogger COPIA</title>
+    <meta name="description" content="🔺Meta descripción de la página de acerca">
+    <link
+      rel="icon"
+      href="data:image/png;base64,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">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+    
+    <nav class="navbar">
+  <div class="grir-parent">
+    <div class="grid-item">
+      <div class="logo">
+        <a href="/">
+          <img src="https://copyblogger.com/wp-content/themes/copyblogger_5.0/images/logo2@2x.png" alt="logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="/articulos ">Artículos
+          </a>
+        </li>
+        <li>
+          <a href="/acerca-de">Acerca de</a>
+        </li>
+        <li>
+          <a href="/servicios">Servicios</a>
+        </li>
+        <li>
+          <a href="/marketing-de-contenidos">Marketing de Contenidos</a>
+        </li>
+        <li>
+          <a href="/marketers-de-contenidos-certificados">Marketers de Contenidos Certificados</a>
+        </li>
+        <li>
+          <a href="/academia">Academia</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+  </header>
+    <main>
+      
+<div class="container-pagina">
+  <h1>Acerca de</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consectetur doloribus esse fugit modi quos in at harum
+    quidem, quas tempora iusto laboriosam, praesentium repellat pariatur sint mollitia quasi molestias.
+  </p>
+  <img src="https://placehold.co/960x960/orange/orangered" alt="img">
+</div>
+    </main>
+    <footer>
+  <div class="BoxNewCta">
+  <div class="NewCtaRibbon">
+    <span _msttexthash="222755" _msthash="25">SUSCRÍBETE AHORA</span>
+  </div>
+  <form action="">
+    <h2>¿Quieres más clientes y clientes?</h2>
+    <p>
+      Nuestra capacitación gratuita revela las 10 lecciones principales que ayudaron a nuestro CEO a ganar más de $ 10,000,000
+      con contenido.
+      <br/> <br/> Ingrese su correo electrónico y consígalo por $ 0 ahora antes de que lo convirtamos en un producto pago a
+      finales de este año:
+    </p>
+    <input type="text" placeholder="Correo Electronico*"/>
+    <input type="submit" value="Obtén la Capacitación Gratuita"/>
+    <span>No te enviaremos spam. Cancela la suscripción en cualquier momento.</span>
+  </form>
+</div>
+  <div class="afiliate">
+    <i>Este sitio contiene enlaces de afiliados a productos. Es posible que recibamos una comisión por las compras
+      realizadas a través de estos enlaces. Sin embargo, esto no afecta nuestras reseñas y comparaciones. Solo sugerimos
+      productos que hemos revisado y, en muchos casos, también usamos, para ayudarlo a tomar las mejores decisiones.</i>
+  </div>
+  <p>Derechos de autor © 2006–2024 Copyblogger Media LLC</p>
+  <div class="nav-footer">
+    <ul>
+      <li>
+        <a href="apoyo-al-cliente">Apoyo al cliente
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="política-de-comentarios">Política de comentarios
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="política-de-privacidad">Política de privacidad
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="política-de-cookies">Política de cookies
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="política-de-reembolsa">Política de reembolso</a>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="letra-chica">Letra chica</a></li>
+    </ul>
+  </div>
+</footer>
+    <script src="/js/main.js" type="module"></script>
+  </body>
+</html>
